@@ -1,0 +1,15 @@
+:root {
+  --royal-burgundy: #6E0F1A;   /* primary — deep wine red */
+  --royal-gold: #C9A227;       /* accent — champagne gold */
+  --emerald-deep: #0B3D2E;     /* secondary — Italian emerald */
+  --ivory-cream: #F8F1E4;      /* light section background */
+  --charcoal-black: #14100D;   /* dark section background / text */
+  --off-white: #FFFDF9;        /* text on dark backgrounds */
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+
+  --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --shadow-premium: 0 10px 30px rgba(0, 0, 0, 0.15);
+  --border-gold: 1px solid var(--royal-gold);
+}

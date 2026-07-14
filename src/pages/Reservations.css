@@ -1,0 +1,82 @@
+.reservations-header-section {
+  padding-top: 140px !important;
+  padding-bottom: 60px !important;
+}
+
+.reservations-header-description {
+  max-width: 600px;
+  margin: -20px auto 0 auto;
+  color: #e0e0e0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.form-layout-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-inner-wrapper {
+  width: 100%;
+  max-width: 800px;
+  background-color: var(--off-white);
+  padding: 48px;
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  box-shadow: var(--shadow-premium);
+}
+
+.instant-bookings-section {
+  border-top: 1px solid var(--royal-gold);
+}
+
+.instant-container {
+  display: flex;
+  justify-content: center;
+}
+
+.instant-content {
+  text-align: center;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instant-text {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  margin-top: -24px;
+  margin-bottom: 40px;
+}
+
+.instant-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .form-inner-wrapper {
+    padding: 24px 16px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 600px) {
+  .instant-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .instant-actions > a {
+    width: 100%;
+    max-width: 280px;
+  }
+}

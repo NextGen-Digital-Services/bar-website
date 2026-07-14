@@ -1,0 +1,188 @@
+.reservation-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.form-group label {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--royal-gold);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 18px;
+  background-color: rgba(20, 16, 13, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--off-white);
+  transition: var(--transition-smooth);
+}
+
+.bg-ivory .form-group input,
+.bg-ivory .form-group select,
+.bg-ivory .form-group textarea {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(20, 16, 13, 0.15);
+  color: var(--charcoal-black);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--royal-gold);
+  box-shadow: 0 0 8px rgba(201, 162, 39, 0.2);
+}
+
+.select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.select-icon {
+  position: absolute;
+  left: 18px;
+  color: var(--royal-gold);
+  pointer-events: none;
+}
+
+.select-wrapper input,
+.select-wrapper select {
+  padding-left: 46px !important;
+}
+
+.form-group select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.form-submit {
+  margin-top: 16px;
+}
+
+.submit-btn {
+  width: 100%;
+}
+
+/* Success State styling */
+.reservation-success {
+  text-align: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.success-icon-wrapper {
+  margin-bottom: 24px;
+}
+
+.success-icon {
+  color: var(--royal-gold);
+}
+
+.success-title {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.bg-ivory .success-title {
+  color: var(--charcoal-black);
+}
+
+.success-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  margin-bottom: 32px;
+}
+
+.bg-ivory .success-subtitle {
+  color: #555;
+}
+
+.success-details-card {
+  width: 100%;
+  max-width: 480px;
+  background-color: #1a1512;
+  border: 1px solid var(--royal-gold);
+  padding: 24px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.bg-ivory .success-details-card {
+  background-color: var(--off-white);
+}
+
+.success-detail-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 0;
+}
+
+.bg-ivory .success-detail-row {
+  border-bottom-color: rgba(20, 16, 13, 0.08);
+}
+
+.success-detail-row:last-child {
+  border-bottom: none;
+}
+
+.success-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--royal-gold);
+  font-weight: 600;
+}
+
+.success-value {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.theme-dark .success-value {
+  color: var(--off-white);
+}
+
+.success-notice {
+  font-size: 0.95rem;
+  color: #c0c0c0;
+  margin-bottom: 32px;
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+.bg-ivory .success-notice {
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

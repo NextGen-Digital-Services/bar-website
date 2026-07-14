@@ -1,0 +1,46 @@
+.premium-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 14px 28px;
+  border-radius: 0; /* Strict luxury architectural clean lines */
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+  gap: 8px;
+}
+
+.premium-btn-solid {
+  background-color: var(--royal-gold);
+  color: var(--charcoal-black);
+  border: 1px solid var(--royal-gold);
+  box-shadow: 0 4px 15px rgba(201, 162, 39, 0.2);
+}
+
+.premium-btn-solid:hover {
+  background-color: transparent;
+  color: var(--royal-gold);
+  box-shadow: 0 4px 15px rgba(201, 162, 39, 0.4);
+}
+
+/* Variant specifically when background of section is light/ivory */
+.bg-ivory .premium-btn-solid:hover {
+  color: var(--royal-burgundy);
+}
+
+.premium-btn-outline {
+  background-color: transparent;
+  color: var(--royal-gold);
+  border: 1px solid var(--royal-gold);
+}
+
+.premium-btn-outline:hover {
+  background-color: var(--royal-gold);
+  color: var(--charcoal-black);
+}

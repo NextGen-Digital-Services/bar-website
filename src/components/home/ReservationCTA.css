@@ -1,0 +1,53 @@
+.reservation-cta-section {
+  border-top: 1px solid var(--royal-gold);
+}
+
+.r-cta-container {
+  display: flex;
+  justify-content: center;
+}
+
+.r-cta-content {
+  text-align: center;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.r-cta-text {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  margin-top: -24px;
+  margin-bottom: 40px;
+}
+
+.r-cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.r-cta-call:hover,
+.r-cta-wa:hover {
+  background-color: var(--royal-gold);
+  color: var(--charcoal-black);
+}
+
+@media (max-width: 600px) {
+  .r-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .r-cta-buttons > a,
+  .r-cta-buttons > button {
+    width: 100%;
+    max-width: 280px;
+  }
+}

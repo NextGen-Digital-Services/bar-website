@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--charcoal-black);
+  color: var(--off-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+/* Typography Defaults */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Full-width section utility */
+.section {
+  width: 100%;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+
+/* Content Container wrapper */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Section specific backgrounds to ensure high contrast and strict flat rotation */
+.bg-burgundy {
+  background-color: var(--royal-burgundy);
+  color: var(--off-white);
+}
+
+.bg-ivory {
+  background-color: var(--ivory-cream);
+  color: var(--charcoal-black);
+}
+
+.bg-charcoal {
+  background-color: var(--charcoal-black);
+  color: var(--off-white);
+}
+
+.bg-emerald {
+  background-color: var(--emerald-deep);
+  color: var(--off-white);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--charcoal-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--royal-burgundy);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--royal-gold);
+}
